@@ -10,17 +10,17 @@ Tired of manually creating cfx.re script files? Use this tool
 
 ## Installation
 
-Install fxhelper with npm
+Install cfxre with npm
 
 ```bash
-npm install fxhelper -g
+npm install cfxre -g
 ```
 ## API Reference
 
 #### Create new project (new directory)
 
 ```bash
-fxhelper create
+cfxre create
 ```
 
 | Options | Description |
@@ -32,7 +32,7 @@ fxhelper create
 #### Create fxmanifest (this directory)
 
 ```bash
-fxhelper init [options]
+cfxre init [options]
 ```
 
 | Options | Description |
@@ -45,8 +45,8 @@ fxhelper init [options]
 ## Usage/Examples
 
 ```bash
-fxhelper create
+cfxre create
 
-fxhelper init
+cfxre init
 ```
 
