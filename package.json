@@ -1,6 +1,6 @@
 {
   "name": "cfxre",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/main.js",
   "license": "MIT",
   "dependencies": {
@@ -9,7 +9,7 @@
     "inquirer": "^9.1.2"
   },
   "bin": {
-    "cfxre": "./dist/cfxhelper_cli.js"
+    "cfxre": "./dist/bin/cfxre.js"
   },
   "type": "module"
 }
