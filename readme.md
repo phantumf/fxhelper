@@ -23,8 +23,10 @@ npm install fxhelper -g
 fxhelper create
 ```
 
-| Options | Description                       |
-| :--------  :-------------------------------- |
+| Options | Description |
+| ------------- | ------------- |
+
+
 
 
 #### Create fxmanifest (this directory)
@@ -33,9 +35,9 @@ fxhelper create
 fxhelper init [options]
 ```
 
-| Options | Description                       |
-| :--------  :-------------------------------- |
-| `-nf, --nofolders`      |  Do not create script folders (default: false) |
+| Options | Description |
+| ------------- | ------------- |
+| `-nf, --nofolders` |  Do not create script folders (default: false) |
 
 
 
