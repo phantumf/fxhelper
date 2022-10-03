@@ -13,14 +13,14 @@ Tired of manually creating cfx.re script files? Use this tool
 Install fxhelper with npm
 
 ```bash
-  npm install fxhelper -g
+npm install fxhelper -g
 ```
 ## API Reference
 
 #### Create new project (new directory)
 
-```http
-  fxhelper create
+```bash
+fxhelper create
 ```
 
 | Options | Description                       |
@@ -29,8 +29,8 @@ Install fxhelper with npm
 
 #### Create fxmanifest (this directory)
 
-```http
-  fxhelper init [options]
+```bash
+fxhelper init [options]
 ```
 
 | Options | Description                       |
