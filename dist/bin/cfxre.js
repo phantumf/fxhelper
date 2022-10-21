@@ -109,8 +109,9 @@ shared_scripts {
 
     console.log(`${colors.white('[')}${colors.bgGreen('SUCC')}${colors.white(']')} ${colors.blue('>')} ${colors.green('Environment creation completed!')}`);
     if (options.__path) console.log(`${colors.white('[')}${colors.bgGreen('SUCC')}${colors.white(']')} ${colors.blue('>')} ${colors.green('Use \'cd ' + options.__path + '\' to go to the project directory')}`);
+    console.log(`${colors.white('[')}${colors.bgGreen('SUCC')}${colors.white(']')} ${colors.blue('>')} ${colors.green('CTRL+C to exit')}`);
 
-    process.exit(0);
+    //process.exit(0);
 
 };
 
@@ -128,7 +129,7 @@ const create = async () => {
     ]);
 
 
-    fs.mkdir('./' + ans.project_name).catch(() => console.log(`${colors.white('[')}${colors.bgRed('ERR')}${colors.white(']')} ${colors.blue('>')} ${colors.red('Cannot create \'' + ans.project_name + '\' folder')}`));
+    await fs.mkdir('./' + ans.project_name).catch(() => console.log(`${colors.white('[')}${colors.bgRed('ERR')}${colors.white(']')} ${colors.blue('>')} ${colors.red('Cannot create \'' + ans.project_name + '\' folder')}`));
 
     await init({ Nf: false, __path: ans.project_name });
 }
