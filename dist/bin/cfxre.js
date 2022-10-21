@@ -96,15 +96,15 @@ shared_scripts {
 'shared/**/*.lua',
 }`;
 
-        fs.mkdir(path + 'client').then(() => console.log(`${colors.white('[')}${colors.bgGreen('SUCC')}${colors.white(']')} ${colors.blue('>')} ${colors.green('Created \'client\' folder')}`)).catch(() => console.log(`${colors.white('[')}${colors.bgRed('ERR')}${colors.white(']')} ${colors.blue('>')} ${colors.red('Cannot create \'client\' folder')}`));
-        fs.mkdir(path + 'server').then(() => console.log(`${colors.white('[')}${colors.bgGreen('SUCC')}${colors.white(']')} ${colors.blue('>')} ${colors.green('Created \'server\' folder')}`)).catch(() => console.log(`${colors.white('[')}${colors.bgRed('ERR')}${colors.white(']')} ${colors.blue('>')} ${colors.red('Cannot create \'server\' folder')}`));
-        fs.mkdir(path + 'shared').then(() => console.log(`${colors.white('[')}${colors.bgGreen('SUCC')}${colors.white(']')} ${colors.blue('>')} ${colors.green('Created \'shared\' folder')}`)).catch(() => console.log(`${colors.white('[')}${colors.bgRed('ERR')}${colors.white(']')} ${colors.blue('>')} ${colors.red('Cannot create \'shared\' folder')}`));
+        await fs.mkdir(path + 'client').then(() => console.log(`${colors.white('[')}${colors.bgGreen('SUCC')}${colors.white(']')} ${colors.blue('>')} ${colors.green('Created \'client\' folder')}`)).catch(() => console.log(`${colors.white('[')}${colors.bgRed('ERR')}${colors.white(']')} ${colors.blue('>')} ${colors.red('Cannot create \'client\' folder')}`));
+        await fs.mkdir(path + 'server').then(() => console.log(`${colors.white('[')}${colors.bgGreen('SUCC')}${colors.white(']')} ${colors.blue('>')} ${colors.green('Created \'server\' folder')}`)).catch(() => console.log(`${colors.white('[')}${colors.bgRed('ERR')}${colors.white(']')} ${colors.blue('>')} ${colors.red('Cannot create \'server\' folder')}`));
+        await fs.mkdir(path + 'shared').then(() => console.log(`${colors.white('[')}${colors.bgGreen('SUCC')}${colors.white(']')} ${colors.blue('>')} ${colors.green('Created \'shared\' folder')}`)).catch(() => console.log(`${colors.white('[')}${colors.bgRed('ERR')}${colors.white(']')} ${colors.blue('>')} ${colors.red('Cannot create \'shared\' folder')}`));
     };
 
 
 
 
-    fs.writeFile(path + 'fxmanifest.lua', manifest, { encoding: 'utf-8' }).then(() => console.log(`${colors.white('[')}${colors.bgGreen('SUCC')}${colors.white(']')} ${colors.blue('>')} ${colors.green('Created \'fxmanifest.lua\'')}`)).catch(() => console.log(`${colors.white('[')}${colors.bgRed('ERR')}${colors.white(']')} ${colors.blue('>')} ${colors.red('Cannot create \'fxmanifest.lua\'')}`));
+    await fs.writeFile(path + 'fxmanifest.lua', manifest, { encoding: 'utf-8' }).then(() => console.log(`${colors.white('[')}${colors.bgGreen('SUCC')}${colors.white(']')} ${colors.blue('>')} ${colors.green('Created \'fxmanifest.lua\'')}`)).catch(() => console.log(`${colors.white('[')}${colors.bgRed('ERR')}${colors.white(']')} ${colors.blue('>')} ${colors.red('Cannot create \'fxmanifest.lua\'')}`));
 
 
     console.log(`${colors.white('[')}${colors.bgGreen('SUCC')}${colors.white(']')} ${colors.blue('>')} ${colors.green('Environment creation completed!')}`);
